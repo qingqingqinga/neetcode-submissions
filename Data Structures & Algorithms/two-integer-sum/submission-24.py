@@ -1,0 +1,19 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        
+        preMap={} #num:index
+
+        for i, n in enumerate(nums):
+            diff=target-n
+            if diff in preMap:
+                return [preMap[diff],i]
+            preMap[n]=i
+
+
+
+        for n,i in enumerate(nums):
+            diff=target-n
+            if diff in preMap:
+                return [premap[diff],i]
+            preMap[n]=i
+            
